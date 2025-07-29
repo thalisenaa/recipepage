@@ -1,4 +1,6 @@
 body{
-    background-color: blue;
+    background:url(/assets/bg.jpg) center;
 }
-
+img{
+    border-radius: 16px;
+}
