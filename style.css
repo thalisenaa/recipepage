@@ -1,4 +1,8 @@
-:roo{
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
     font-family: "Alice", serif;
     line-height: 150%;
     color: #573A37;
@@ -7,7 +11,6 @@
 body{
     background-image:url(/assets/bg.jpg);
     background-size: cover;
-}
 
 #page {
     box-sizing: border-box; /*faz com que as paddings e margem não se somem*/
@@ -17,17 +20,35 @@ body{
     border-radius: 24px;
     margin: 48px auto;
 }
+
 img{
     border-radius: 16px;
 }
 
+main{
+    padding: 24px;
+}
+
 h1{
-    line-height: 140%;
     font-size: 40px;
 }
+#about p + p { /* Qual parágrafo tem um parágrafo anterior a ele na seção abour*/
+    margin-top: 12px;
+}
+
+section +section{
+    margin-top: 24px;
+}
+
 h2{
     font-size: 24px;
 }
+
 h1, h2{
     color: #291B1A;
+    margin-bottom: 4px;
+    line-height: 150%; 
+}
+ul{
+    padding-left:24px;
 }
